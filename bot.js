@@ -15,7 +15,9 @@ const queue = new Map();
 
 
 
-
+client.on('ready', () => {
+client.channels.get('502934273695940621').send('@everyone HeroHost Music Bot Has Been Turned On ');
+});
 
 
 
