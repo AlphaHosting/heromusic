@@ -15,9 +15,7 @@ const queue = new Map();
 
 
 
-client.on('ready', () => {
-client.channels.get('502934273695940621').send('@everyone HeroHost Music Bot Has Been Turned On ');
-});
+
 
 
 
@@ -57,10 +55,7 @@ client.on('message', message => {
       
   if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
-      message.channel.send(`**?   ${argresult}**`)
-  } else 
-     if (message.content === (adminprefix + "leave")) {
-    message.guild.leave();        
+      message.channel.send(`**?   ${argresult}**`)      
   } else  
   if (message.content.startsWith(adminprefix + 'wt')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
