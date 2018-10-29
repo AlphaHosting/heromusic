@@ -23,7 +23,7 @@ client.channels.get('502934273695940621').send('@everyone HeroHost Music Bot Has
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`Hero Host music |.help`,"https://www.hero-host.com")
+client.user.setGame(`Hero Host  |.help`,"https://www.hero-host.com")
   console.log('')
   console.log('')
   console.log('+[-----------------------------------------------------------------]+')
