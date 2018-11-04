@@ -49,7 +49,7 @@ client.user.setGame(`Hero Host  |.help`,"https://www.hero-host.com")
 client.on("message", message => {
 	if (message.content === ".admin") {
 		if (!developers.includes(message.author.id)) return; 
-	message.channel.send('`**All bot Commands in your DMs now**')
+	message.channel.send('**Done All Admin Commands In Your DMs**')
 	 const embed = new Discord.RichEmbed()
 		 .setColor('Green')
 		 .setDescription(`
@@ -299,7 +299,7 @@ function play(guild, song) {
 
 client.on("message", message => {
 	if (message.content === ".help") {
-		if (!blacklisted.includes(message.author.id)) return; message.channel.send('You Are BlackListed');
+		if (!blacklisted.includes(message.author.id)) return; 
 	message.channel.send('`**All bot Commands in your DMs now**')
 	 const embed = new Discord.RichEmbed()
 		 .setColor('Green')
