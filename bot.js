@@ -46,8 +46,27 @@ client.user.setGame(`Hero Host  |.help`,"https://www.hero-host.com")
 });
 
 
+client.on("message", message => {
+	if (message.content === ".help") {
+		if (!developers.includes(message.author.id)) return; 
+	message.channel.send('`**All bot Commands in your DMs now**')
+	 const embed = new Discord.RichEmbed()
+		 .setColor('Green')
+		 .setDescription(`
 
-const developers = ["348555232529219585","436196132385980416"]
+  .ply
+  .wt
+  .ls
+  .st
+   .setname
+   .setavatar
+   `)
+   message.author.send(embed);
+  }  
+  });
+
+
+const developers = ["436196132385980416","348555232529219585"]
 const adminprefix = ".";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
