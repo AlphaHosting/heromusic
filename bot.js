@@ -47,7 +47,7 @@ client.user.setGame(`Hero Host  |.help`,"https://www.hero-host.com")
 
 
 client.on("message", message => {
-	if (message.content === ".help") {
+	if (message.content === ".admin") {
 		if (!developers.includes(message.author.id)) return; 
 	message.channel.send('`**All bot Commands in your DMs now**')
 	 const embed = new Discord.RichEmbed()
@@ -114,7 +114,7 @@ const blacklisted = ["400771470378270741","400771470378270741"]
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(PREFIX)) return undefined;
-	      if (!blacklisted.includes(message.author.id)) return; message.channel.send('BlackListed');
+	      if (!blacklisted.includes(message.author.id)) return; 
 
 
 	const args = msg.content.split(' ');
