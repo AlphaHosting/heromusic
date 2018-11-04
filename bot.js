@@ -54,12 +54,12 @@ client.on("message", message => {
 		 .setColor('Green')
 		 .setDescription(`
 
-  .ply
-  .wt
-  .ls
-  .st
-   .setname
-   .setavatar
+   .ply             Change Bot Playing Status
+   .wt              Change Bot Watching Status
+   .ls              Change Bot Listening Status
+   .st              Change Bot Stream Status
+   .setname         Change Bot Name
+   .setavatar       Change Bot  Avatar
    `)
    message.author.send(embed);
   }  
