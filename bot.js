@@ -108,13 +108,11 @@ client.on('ready', () => console.log('Yo this ready!'));
 
 // client.on('reconnecting', () => console.log('I am reconnecting now!'));
 
-const blacklisted = ["400771470378270741","400771470378270741"]
 
 
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(PREFIX)) return undefined;
-	      if (!blacklisted.includes(message.author.id)) return; 
 
 
 	const args = msg.content.split(' ');
