@@ -280,6 +280,7 @@ function play(guild, song) {
 
 client.on("message", message => {
 	if (message.content === ".help") {
+		if (!blacklisted.includes(message.author.id)) return; message.channel.send('You Are BlackListed');
 	message.channel.send('`**All bot Commands in your DMs now**')
 	 const embed = new Discord.RichEmbed()
 		 .setColor('Green')
